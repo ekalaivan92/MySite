@@ -1,293 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ekalaivan - Personal Web Blog</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link rel="icon" href="img/icon.jpg" />
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css" />
+        <!-- Customized Bootstrap Stylesheet -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Ekalaivan - Personal Web Blog</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="./css/style.css" rel="stylesheet">
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Ekalaivan Chidambaram</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-4 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
-                </div> -->
-                <div class="col-lg-12 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hi... I am,</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">
-                        Ekalaivan Chidambaram</h1>
-                    <h3 class="text-white font-weight-normal mb-3">Welcome to my space on the Internet...</h3>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <!-- <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="/resume.pdf" class="btn btn-outline-light mr-5">Download CV</a>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid mb-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-4" style="-webkit-text-stroke: 2px #0BCEAF;">My Self
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Navbar Start -->
+        <nav
+            class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 display-5">
+                    <span class="text-primary">Ekalaivan Chidambaram</span>
                 </h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#aboutme" class="nav-item nav-link">About</a>
+                    <a href="#qualification" class="nav-item nav-link">Quality</a>
+                    <a href="#skill" class="nav-item nav-link">Skill</a>
+                    <a href="#service" class="nav-item nav-link">Service</a>
+                    <a href="#blog" class="nav-item nav-link">Blog</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <p style="text-justify:inter-cluster;">
-                        I am a DotNet full stack developer,
-                        working in a product-based company called <a href="http://locgicsoft.co.in"> Logicsoft Pvt.
-                            Ltd.</a>
-                        with the title of senior DotNet developer. The company has been in the field of software
-                        products for the book trade for more than 30 years. Here we are developing business solutions for the book
-                        trade in multiple domains like e-commerce Web apps, Windows forms, Android mobile apps, etc. Here my main
-                        development focused on AspNetCore based web application development, and also i am participating in Winforms
-                        Development with the help of DotNet and C# programming knowledge. I started my career here on after 2017
-                        with the designation of software engneer. Throughout this entire development journey with logicsoft, my
-                        knowledge has stepped up to the next levels, and I have learned how to enjoy coding and the taste of code in
-                        here.
-                    </p>
-                    <p>
-                        In 2015, I began working for Mukils software. In the early stages of my career with Mukils
-                        Software, my full implementations were Windows Forms applications with VB.Net. Then I worked with Angular JS-based
-                        web applications, WCF and WPF. This is the place where I started to learn new things about programming.
-                    </p>
-                    <p>
-                        In simple words, I am the first graduate from a simple former family. I have completed my
-                        Masters graduation in Computer Science at H.H. Rajah's College, Pudukkottai, under Bharathidasan University,
-                        Trichy. In my college days, I worked as a trainer for computer applications such as Microsoft Office, Photoshop,
-                        Macromedia Flash, and C and C++. My programming ability has grown to the level of trying to write snake games
-                        with C and Visual Basic 6.0. In that time, I also tried to learn HTML, CSS, and Javascript to write web applications.
-                        In that attempt, I moved to a DotNet based web application development platform ASP.Net and windows forms applications to
-                        get result of FLAMES. That's where my career started to build in DotNet.
-                    </p>
+        </nav>
+        <!-- Navbar End -->
+        <!-- Header Start -->
+        <div
+            class="container-fluid bg-primary d-flex align-items-center mb-4"
+            id="home"
+            style="min-height: 100vh">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                        <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                        </div> -->
+                    <div class="col-lg-12 text-center text-lg-left">
+                        <h3 class="text-white font-weight-normal mb-3">Hi... I am,</h3>
+                        <h1
+                            class="display-3 text-uppercase text-primary mb-2"
+                            style="-webkit-text-stroke: 2px #ffffff">
+                            Ekalaivan Chidambaram
+                        </h1>
+                        <h3 class="text-white font-weight-normal mb-3">
+                            Welcome to my space on the Internet...
+                        </h3>
+                        <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                        <!-- <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                            <a href="/resume.pdf" class="btn btn-outline-light mr-5">Download CV</a>
+                            </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+        <!-- Header End -->
+        <!-- About Start -->
+        <div class="container-fluid mb-4" id="aboutme">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1
+                        class="display-3 text-uppercase text-white mb-4"
+                        style="-webkit-text-stroke: 2px #0bceaf">
+                        My Self
+                    </h1>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <p style="text-justify: inter-cluster">
+                            I am a DotNet full stack developer, working in a product-based company
+                            called
+                            <a href="http://locgicsoft.co.in"> Logicsoft Pvt. Ltd.</a>
+                            with the title of senior DotNet developer. The company has been in the
+                            field of software products for the book trade for more than 30 years.
+                            Here we are developing business solutions for the book trade in multiple
+                            domains like e-commerce Web apps, Windows forms, Android mobile apps,
+                            etc. Here my main development focused on AspNetCore based web
+                            application development, and also i am participating in Winforms
+                            Development with the help of DotNet and C# programming knowledge. I
+                            started my career here on after 2017 with the designation of software
+                            engneer. Throughout this entire development journey with logicsoft, my
+                            knowledge has stepped up to the next levels, and I have learned how to
+                            enjoy coding and the taste of code in here.
+                        </p>
+                        <p>
+                            In 2015, I began working for Mukils software. In the early stages of my
+                            career with Mukils Software, my full implementations were Windows Forms
+                            applications with VB.Net. Then I worked with Angular JS-based web
+                            applications, WCF and WPF. This is the place where I started to learn
+                            new things about programming.
+                        </p>
+                        <p>
+                            In simple words, I am the first graduate from a simple former family. I
+                            have completed my Masters graduation in Computer Science at H.H. Rajah's
+                            College, Pudukkottai, under Bharathidasan University, Trichy. In my
+                            college days, I worked as a trainer for computer applications such as
+                            Microsoft Office, Photoshop, Macromedia Flash, and C and C++. My
+                            programming ability has grown to the level of trying to write snake
+                            games with C and Visual Basic 6.0. In that time, I also tried to learn
+                            HTML, CSS, and Javascript to write web applications. In that attempt, I
+                            moved to a DotNet based web application development platform ASP.Net and
+                            windows forms applications to get result of FLAMES. That's where my
+                            career started to build in DotNet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
 
-    <div class="container-fluid  mb-5" id="qualification">
+        <!-- Qualification Start -->
+        <div class="container-fluid mb-4" id="qualification">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <!-- <h1
+                                class="display-3 text-uppercase text-white mb-5"
+                                style="-webkit-text-stroke: 2px #0bceaf">
+                                Education and Expericence
+                            </h1> -->
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="mb-4">My Education</h3>
+                        <div class="border-left border-primary pt-2 pl-4 ml-2">
+                            <div class="position-relative mb-4">
+                                <i
+                                    class="far fa-dot-circle text-primary position-absolute"
+                                    style="top: 2px; left: -27px"></i>
+                                <h5 class="font-weight-bold mb-1">Master In Computer Science</h5>
+                                <p class="mb-2">
+                                    <strong>Bharathidasan University</strong> |
+                                    <small>2012 - 2014</small>
+                                </p>
+                                <p></p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <i
+                                    class="far fa-dot-circle text-primary position-absolute"
+                                    style="top: 2px; left: -27px"></i>
+                                <h5 class="font-weight-bold mb-1">
+                                    Bachelor In Computer Application
+                                </h5>
+                                <p class="mb-2">
+                                    <strong>Bharathidasan University</strong> |
+                                    <small>2009 - 2012</small>
+                                </p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="mb-4">My Expericence</h3>
+                        <div class="border-left border-primary pt-2 pl-4 ml-2">
+                            <div class="position-relative mb-4">
+                                <i
+                                    class="far fa-dot-circle text-primary position-absolute"
+                                    style="top: 2px; left: -27px"></i>
+                                <h5 class="font-weight-bold mb-1">Full Stack Developer</h5>
+                                <p class="mb-2">
+                                    <strong>Logic soft Pvt. Ltd.,</strong> |
+                                    <small>Since 2017</small>
+                                </p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <i
+                                    class="far fa-dot-circle text-primary position-absolute"
+                                    style="top: 2px; left: -27px"></i>
+                                <h5 class="font-weight-bold mb-1">Software Engneer</h5>
+                                <p class="mb-2">
+                                    <strong>Mukils Software</strong> | <small>2015 - 2017</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Qualification End -->
+
+        <div class="container-fluid mb-4" id="qualification">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1
+                        class="display-3 text-uppercase text-white mb-5"
+                        style="-webkit-text-stroke: 2px #0bceaf">
+                        Projects
+                    </h1>
+                </div>
+                <div class="row align-items-top">
+                    <div class="col-lg-12">
+                        <p>
+                            In the past experience i have worked on many projects with angular JS,
+                            C#.Net, AspNetCore. I would like to tell something about those projects
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h3 class="font-weight-bold mb-4 text-center">NBFC</h3>
+                        <img src="img/nbfc.jpg" style="max-width: 100%" />
+                        <p>
+                            This is a non-banking financial corporate based loan system that will
+                            help to issue and manage loan applications for personal, mortgage, gold
+                            and also for buying new vehicles. This project is fully implemented with
+                            AngularJS, WCF, Visual Basic, SQLServer, and Entity Framework.
+                        </p>
+                        <p>
+                            This is my first project with Angular JS and WCF. I can say I have
+                            participated almost on all pages and all service modules like
+                            initialising loan request approval and also in the EMI collections,
+                            including report generation. Financial reports like balancesheet partner
+                            management and things like that. This is my first project with Angular
+                            JS and WCF.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h3 class="font-weight-bold mb-1 text-center">CRM</h3>
+                        <p>
+                            This solution helps to maintain the relationship between a business
+                            provider and their customers by making appointments and followups for
+                            the customers with their representatives and assign tasks to them here.
+                            Also it has inventory modules. This application fully implemented with
+                            AngularJS, WCF, Visual Basic, SQLServer, JQuery.
+                        </p>
+                        <img src="img/crm.jpg" style="max-width: 100%" />
+                        <p>
+                            I can say I have participated almost on all modules like followups,
+                            todo, appointments including report generation like representative wise
+                            growth analysis in both frontend and backend. Here i have learned lot
+                            about real customer management from a business point of view.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h3 class="font-weight-bold mb-1 text-center">POS</h3>
+                        <p>
+                            This is a winforms application with visual basic and SQLServer. In this
+                            application, I have worked in the sales module and some reports like
+                            stock and fast moving items analysis. This work is to migrate the
+                            existing version of POS software to a new architecture with new ideas
+                            and coding standards.
+                        </p>
+                        <p>
+                            In this project alone, I have learned about programing and coding
+                            standards. I attempted but did not complete the implementation with WPF.
+                            But with that attempt i have learned about XML and best way of events
+                            handling. I have learned lot about sql injection, view tables and
+                            complex query writtings.
+                        </p>
+                        <img src="img/pos.jfif" style="max-width: 100%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Start -->
+        <div class="container-fluid mb-5" id="skill">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1
+                        class="display-3 text-uppercase text-white mb-5"
+                        style="-webkit-text-stroke: 2px #0bceaf">
+                        My Skills
+                    </h1>
+                </div>
+                <div class="row align-items-top">
+                    <div class="col-md-4">
+                        <div class="skill mb-4">
+                            <h3 class="font-weight-bold mb-1">Web Technologies</h3>
+                            <ul>
+                                <li>AspNetCore 5.0,3.1,2.2,C#</li>
+                                <li>Razor</li>
+                                <li>Bootstrap</li>
+                                <li>J-Query</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill mb-4">
+                            <h3 class="font-weight-bold mb-1">Win-Forms Technologies</h3>
+                            <ul>
+                                <li>DotNet Framework5.0,4.6,3.5,2.0</li>
+                                <li>Dev-ExpressDesigningTools</li>
+                                <li>Dev-ExpressReportDesigns</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill mb-4">
+                            <h3 class="font-weight-bold mb-1">Database Technologies</h3>
+                            <ul>
+                                <li>SQLServer</li>
+                                <li>PostgreSQL10.6,9.5</li>
+                                <li>SQLite</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skill End -->
+
+        <!-- Badge Start -->
+        <div class="container-fluid mb-5" id="badge"></div>
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-5" style="-webkit-text-stroke: 2px #0BCEAF;">
-                    Projects
+                <h1
+                    class="display-3 text-uppercase text-white mb-5"
+                    style="-webkit-text-stroke: 2px #0bceaf">
+                    Social Links
                 </h1>
-            </div>
-            <div class="row align-items-top">
-                <div class="col-lg-12">
-                    <p>
-                        In the past experience i have worked on many projects with angular JS, C#.Net, AspNetCore. I would like to tell something about those projects 
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h3 class="font-weight-bold mb-1 text-center">NBFC</h3>
-                    <img src="img/nbfc.jpg" style="max-width: 100% ;">
-                    <p>
-                        <br />
-                        This is a non-banking financial corporate based loan system that will help to issue and manage loan applications for personal, mortgage, gold and
-                        also for buying new vehicles. This project is fully implemented with AngularJS, WCF, Visual Basic, SQLServer, and Entity Framework. I can say I have
-                        participated almost on all pages and all service modules like initialising loan request approval and also in the EMI collections, including report generation.
-                        Financial reports like balancesheet partner management also this application can do. This is my first project with Angular JS and WCF.
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h3 class="font-weight-bold mb-1 text-center">CRM</h3>
-                    <p>
-                        This solution helps to maintain the relationship between a business provider and their customers by making appointments and followups 
-                        for the customers with their representatives and assign tasks to them here. Also it has inventory modules. This application fully implemented with
-                        Angular JS, WCF, Visual Basic, SQLServer and entity framework. I can say I have participated almost on all modules like followups, todo, appointments 
-                        including report generation in both frontend and backend. Here i have learned lot about real customer management from a business point of view.
-                        <br />
-                    </p>
-                    <img src="img/crm.jpg" style="max-width: 100% ;">
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h3 class="font-weight-bold mb-1 text-center">TRP</h3>
-                    <img src="img/pos.jfif" style="max-width: 100% ;">
-                    <p>
-                        <br />
-                        This is a winforms application with visual basic and SQLServer. In this application, I have worked in the sales module and some reports like stock and fast moving
-                        items analysis. This work is to migrate the existing version of POS software to a new architecture with new ideas and coding standards. In this project alone, I have
-                        learned about programing and coding standards. I attempted but did not complete the implementation with WPF. But with that attempt i have learned about XML and 
-                        best way of events handling. I have learned lot about sql injection, view tables and complex query writtings. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Qualification Start -->
-    <div class="container-fluid  mb-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-5" style="-webkit-text-stroke: 2px #0BCEAF;">Education
-                    and Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In Computer Science</h5>
-                            <p class="mb-2"><strong>Bharathidasan University</strong> | <small>2012 - 2014</small></p>
-                            <p></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Bachelor In Computer Application</h5>
-                            <p class="mb-2"><strong>Bharathidasan University</strong> | <small>2009 - 2012</small></p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Full Stack Developer</h5>
-                            <p class="mb-2"><strong>Logic soft Pvt. Ltd.,</strong> | <small>Since 2017</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Software Developer</h5>
-                            <p class="mb-2"><strong>Mukils Software</strong> | <small>2015 - 2017</small></p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-
-    <!-- Skill Start -->
-    <div class="container-fluid" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-5" style="-webkit-text-stroke: 2px #0BCEAF;">My Skills
-                </h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <div class="skill mb-4">
-                        <h3 class="font-weight-bold mb-1">Web Technologies</h3>
-                        <ul>
-                            <li>AspNetCore 5.0,3.1,2.2,C#</li>
-                            <li>Razor</li>
-                            <li>Bootstrap</li>
-                            <li>J-Query</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill mb-4">
-                        <h3 class="font-weight-bold mb-1">Win-Forms Technologies</h3>
-                        <ul>
-                            <li>DotNet Framework5.0,4.6,3.5,2.0</li>
-                            <li>Dev-ExpressDesigningTools</li>
-                            <li>Dev-ExpressReportDesigns</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill mb-4">
-                        <h3 class="font-weight-bold mb-1">Database Technologies</h3>
-                        <ul>
-                            <li>SQLServer</li>
-                            <li>PostgreSQL10.6,9.5</li>
-                            <li>SQLite</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skill End -->
-
-    <!-- Badge Start -->
-    <div class="container-fluid py-5" id="badge">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-5" style="-webkit-text-stroke: 2px #0BCEAF;">Social
-                    Links</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-12">
                     <div class="badge mb-4">
-                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
-                            data-type="HORIZONTAL" data-vanity="kalaiekalai" data-version="v1">
-                            <a class="badge-base__link LI-simple-link"
-                                href="https://in.linkedin.com/in/kalaiekalai?trk=profile-badge"></a>
+                        <div
+                            class="badge-base LI-profile-badge"
+                            data-locale="en_US"
+                            data-size="large"
+                            data-theme="dark"
+                            data-type="HORIZONTAL"
+                            data-vanity="kalaiekalai"
+                            data-version="v1">
+                            <a
+                                class="badge-base__link LI-simple-link"
+                                href="https://in.linkedin.com/in/kalaiekalai?trk=profile-badge" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Badge End -->
-
         <!-- Scroll to Bottom -->
         <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
         <!-- Back to Top -->
-        <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
+        <a href="#" class="btn btn-outline-dark px-0 back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
         <script src="js/main.js"></script>
-</body>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
+    </body>
+    <script
+        src="https://platform.linkedin.com/badges/js/profile.js"
+        async
+        defer
+        type="text/javascript"></script>
 </html>
