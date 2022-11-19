@@ -379,6 +379,12 @@ h1, .h1 {
   }
 }
 
+@media (max-width: 575px) {
+  h1, .h1 {
+    font-size: calc(1rem + 1.5vw) ;
+  }
+}
+
 h2, .h2 {
   font-size: 2rem;
 }
@@ -4162,7 +4168,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.07rem 0.35rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -4176,8 +4182,8 @@ input[type="button"].btn-block {
 
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.0em;
+  height: 1.0em;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -9982,4 +9988,17 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.navbar-icon
+{
+  width: 82px;
+  border-radius: 4px; 
+  display: inline-flex;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-icon{
+    width: 36px;
+  }
 }
