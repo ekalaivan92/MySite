@@ -4124,7 +4124,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  display: inline-block;
+  display: flex;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
@@ -9992,7 +9992,7 @@ h6,
 
 .navbar-icon
 {
-  width: 82px;
+  width: 69px;
   border-radius: 4px; 
   display: inline-flex;
 }
