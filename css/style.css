@@ -10002,3 +10002,17 @@ h6,
     width: 36px;
   }
 }
+
+.project-image
+{
+  height: 186px;
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.project-content
+{
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
