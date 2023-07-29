@@ -4427,9 +4427,16 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
 }
+.navbar-dark .navbar-nav
+{
+  background-color: #081a17c4 !important;
+  padding: 15px;
+  border-radius: 4px;
+  font-weight: 500;
+}
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255 255 255 / 82%);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -9798,9 +9805,6 @@ h6,
   }
 }
 
-.navbar-light {
-}
-
 .navbar-light .navbar-nav .nav-link {
   padding: 25px 10px;
   color: #343a40;
@@ -10015,4 +10019,17 @@ h6,
 {
   margin-top: 1rem;
   margin-bottom: 0px;
+}
+
+.home
+{
+  background-image: url(../img/headerbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.header-text-color
+{
+  color: rgb(255 255 255 / 82%);
 }

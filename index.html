@@ -20,12 +20,12 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-0 px-lg-5">
+    <nav id="mainNav" class="navbar fixed-top shadow-sm navbar-expand-lg bg-light-50 navbar-dark py-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
             <img src="img/icon.jpg" class="navbar-icon">
-            <h1 class="m-0 display-5 pl-2">Ekalaivan Chidambaram</h1>
+            <h1 id="home-header" class="m-0 display-5 pl-2 header-text-color">Ekalaivan Chidambaram</h1>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" id="menuButton" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
@@ -36,24 +36,24 @@
                 <a href="#projects" class="nav-item nav-link">Projects</a>
                 <a href="#skill" class="nav-item nav-link">Skills</a>
                 <a href="#sociallinks" class="nav-item nav-link">Contact</a>
+                <a href="http://blogs.ekalaivan.net" class="nav-item nav-link" target="_blank">Blogs</a>
+                <a href="http://clicks.ekalaivan.net" class="nav-item nav-link" target="_blank">Clicks</a>
             </div>
-            <a href="http://blogs.ekalaivan.net" class="nav-item nav-link">Blog</a>
-            <a href="http://clicks.ekalaivan.net" class="nav-item nav-link" target="_blank">Clicks</a>
         </div>
     </nav>
     <!-- Navbar End -->
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-4" id="home" style="min-height: 100vh">
+    <div class="container-fluid bg-primary d-flex align-items-center home mb-4" id="home" style="min-height: 100vh">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row justify-content-center align-items-center">
                 <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
                         <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
                         </div> -->
-                <div class="col-lg-12 text-center text-lg-left">
+                <div class="col-md-12 align-self-center">
                     <h3 class="text-white font-weight-normal mb-3">Hi... I am,</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 1px #ffffff">
+                    <h2 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 1px #ffffff">
                         Ekalaivan Chidambaram
-                    </h1>
+                    </h2>
                     <h3 class="text-white font-weight-normal mb-3">
                         Welcome to my space on the Internet...
                     </h3>
@@ -63,7 +63,7 @@
                             </div> -->
                 </div>
             </div>
-            <div class="row justify-content-center align-items-end">
+            <div class="row justify-content-center align-items-end" style="color: #e7e7e7; font-weight: 600;">
                 <div class="col-md-6 text-center align-self-center mt-5">
                     <em>
                         "Be Water, My Friend. Empty your mind. Be formless, shapeless, like
@@ -571,11 +571,13 @@
         </div>
     </div>
     <!-- Badge End -->
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
     <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top">
+    <a href="#" class="btn btn-outline-dark bg-white px-0 back-to-top">
         <i class="fa fa-angle-double-up"></i>
+    </a>
+    <!-- Scroll to Bottom -->
+    <a href="#" class="scroll-to-bottom">
+        <i class="fa fa-2x fa-angle-down text-white"></i>
     </a>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
