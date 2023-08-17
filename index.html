@@ -2,587 +2,712 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Ekalaivan - Personal Web Blog</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="icon" href="img/icon.jpg" />
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
-    <!-- Libraries Stylesheet -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
-    <!-- Customized Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ekalaivan - Official Web Site</title>
+
+  <!-- <link rel="icon" type="text/image" href="images/icon.jpg" /> -->
+
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" async />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+  <style>
+    body {
+      background-color: #f3f3f3;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .home {
+      background-image: url(./images/bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: soft-light;
+      background-color: rgb(16, 36, 33)
+    }
+
+    .bg-navbar {
+      background-color: #117d70cf;
+    }
+
+    /* ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bs-gray);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: #117d70cf;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background: rgba(0, 0, 0, .9);
+    } */
+  </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav id="mainNav" class="navbar fixed-top shadow-sm navbar-expand-lg bg-light-50 navbar-dark py-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <img src="img/icon.jpg" class="navbar-icon">
-            <h1 id="home-header" class="m-0 display-5 pl-2 header-text-color">Ekalaivan Chidambaram</h1>
+<body>
+  <div id="home" class="home">
+    <nav id="mainNav" class="navbar shadow fixed-top navbar-expand-md navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/icon.jpg" class="rounded-1" alt="" width="45" height="40" alt="icon" />
+          <strong class="Text-white">Ekalaivan Chidambaram</strong>
         </a>
-        <button type="button" class="navbar-toggler" id="menuButton" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#aboutme" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#projects" class="nav-item nav-link">Projects</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#sociallinks" class="nav-item nav-link">Contact</a>
-                <a href="http://blogs.ekalaivan.net" class="nav-item nav-link" target="_blank">Blogs</a>
-                <a href="http://clicks.ekalaivan.net" class="nav-item nav-link" target="_blank">Clicks</a>
-            </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+
+          <ul class="navbar-nav mb-2 mb-lg-0 bg-info rounded-3 px-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home" data-fragment="home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutme" data-fragment="aboutme">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#quality">Quality</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#activities">Activities</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <!-- Navbar End -->
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center home mb-4" id="home" style="min-height: 100vh">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                        <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
-                        </div> -->
-                <div class="col-md-12 align-self-center">
-                    <h3 class="text-white font-weight-normal mb-3">Hi... I am,</h3>
-                    <h2 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 1px #ffffff">
-                        Ekalaivan Chidambaram
-                    </h2>
-                    <h3 class="text-white font-weight-normal mb-3">
-                        Welcome to my space on the Internet...
-                    </h3>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <!-- <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                            <a href="/resume.pdf" class="btn btn-outline-light mr-5">Download CV</a>
-                            </div> -->
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-end" style="color: #e7e7e7; font-weight: 600;">
-                <div class="col-md-6 text-center align-self-center mt-5">
-                    <em>
-                        "Be Water, My Friend. Empty your mind. Be formless, shapeless, like
-                        water. You put water into a cup, it becomes the cup. You put water
-                        into a bottle, it becomes the bottle. You put it into a teapot, it
-                        becomes the teapot. Now water can flow or it can crash. Be water, my
-                        friend."    
-                    </em>
-                    <br />
-                    <p class="text-right">
-                        -- <em>Bruce Lee</em>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-    <!-- About Start -->
-    <div class="container-fluid mb-4" id="aboutme">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-0" style="-webkit-text-stroke: 2px #0bceaf">
-                    My Self
-                </h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <p style="text-justify: inter-cluster">
-                        I am a DotNet full stack developer, working in a product-based company
-                        called
-                        <a href="http://locgicsoft.co.in"> Logicsoft Pvt. Ltd.</a>
-                        with the title of senior DotNet developer. The company has been in the
-                        field of software products for the book trade for more than 30 years.
-                        Here we are developing business solutions for the book trade in multiple
-                        domains like e-commerce Web apps, Windows forms, Android mobile apps,
-                        etc. Here my main development focused on AspNetCore based web
-                        application development, and also i am participating in Winforms
-                        Development with the help of DotNet and C# programming knowledge. I
-                        started my career here on after 2017 with the designation of software
-                        engineer. Throughout this entire development journey with logicsoft, my
-                        knowledge has stepped up to the next levels, and I have learned how to
-                        enjoy coding and the taste of code in here.
-                    </p>
-                    <p>
-                        In 2015, I began working for Mukils software. In the early stages of my
-                        career with Mukils Software, my full implementations were Windows Forms
-                        applications with VB.Net. Then I worked with Angular JS-based web
-                        applications, WCF and WPF. This is the place where I started to learn
-                        new things about programming.
-                    </p>
-                    <p>
-                        In simple words, I am the first graduate from a simple former family. I
-                        have completed my Masters graduation in Computer Science at H.H. Rajah's
-                        College, Pudukkottai, under Bharathidasan University, Trichy. In my
-                        college days, I worked as a trainer for computer applications such as
-                        Microsoft Office, Photoshop, Macromedia Flash, and C and C++. My
-                        programming ability has grown to the level of trying to write snake
-                        games with C and Visual Basic 6.0. In that time, I also tried to learn
-                        HTML, CSS, and Javascript to write web applications. In that attempt, I
-                        moved to a DotNet based web application development platform ASP.Net and
-                        windows forms applications to get result of FLAMES. That's where my
-                        career started to build in DotNet.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
 
-    <!-- Qualification Start -->
-    <div class="container-fluid mb-4" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <!-- <h1
-                                class="display-3 text-uppercase text-white mb-5"
-                                style="-webkit-text-stroke: 2px #0bceaf">
-                                Education and Expericence
-                            </h1> -->
+    <div>
+      <div class="container text-left">
+        <div class="row align-items-center justify-content-center" style="height: calc(100Vh);">
+          <div class="col-8 text-center text-white">
+            <div class="fw-bold text-white" style="text-shadow: 0px 3px 7px var(--bs-primary);">
+              <p class="mb-0 fs-4 text-center">
+                <em>
+                  "Be Water, My Friend. Empty your mind. Be formless, shapeless, like
+                  water. You put water into a cup, it becomes the cup. You put water
+                  into a bottle, it becomes the bottle. You put it into a teapot, it
+                  becomes the teapot. Now water can flow or it can crash. Be water, my
+                  friend."
+                </em>
+              </p>
+              <p class="text-end fs-5"> -- <em>Bruce Lee </em></p>
             </div>
-            <div class="row align-items-top">
-                <div class="col-md-6">
-                    <h3 class="mb-4">My Experience</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">Senior Dotnet Developer</h5>
-                            <p class="mb-2">
-                                <strong>Logic soft Pvt. Ltd.,</strong> |
-                                <small>Since 2020</small>
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">Dotnet Developer</h5>
-                            <p class="mb-2">
-                                <strong>Logic soft Pvt. Ltd.,</strong> |
-                                <small>2017-2020</small>
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">Software Engineer</h5>
-                            <p class="mb-2">
-                                <strong>Mukils Software</strong> | <small>2015 - 2017</small>
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">
-                                Dotnet Freelancer
-                            </h5>
-                            <p class="mb-2">
-                                <strong>Self Learning</strong> |
-                                <small>2014 - 2015</small>
-                            </p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">Masters In Computer Science</h5>
-                            <p class="mb-2">
-                                <strong>Bharathidasan University</strong> |
-                                <small>2012 - 2014</small>
-                            </p>
-                            <p></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">
-                                Bachelors In Computer Application
-                            </h5>
-                            <p class="mb-2">
-                                <strong>Bharathidasan University</strong> |
-                                <small>2009 - 2012</small>
-                            </p>
-                            <p></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">
-                                HSC
-                            </h5>
-                            <p class="mb-2">
-                                <strong>Tamilnadu State Board</strong> |
-                                <small>2007 - 2009</small>
-                            </p>
-                            <p></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">
-                                SSLC
-                            </h5>
-                            <p class="mb-2">
-                                <strong>Tamilnadu State Board</strong> |
-                                <small>2006 - 2007</small>
-                            </p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Qualification End -->
+  </div>
 
-    <div class="container-fluid mb-4" id="projects">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-0" style="-webkit-text-stroke: 2px #0bceaf">
-                    Projects
-                </h1>
-            </div>
-            <div class="row align-items-top">
-                <div class="col-lg-12">
-                    <p>
-                        In the past experience i have worked on many projects with angular JS,
-                        C#.Net, AspNetCore. I would like to tell something about those projects
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-2">
-                    <div class="mb-2 text-center">
-                        <h3 class="font-weight-bold">Coupons</h3>
-                        <span class="badge badge-secondary">Blazor</span>
-                        <span class="badge badge-secondary">Radzen-Blazor</span>
-                        <span class="badge badge-secondary">C#</span>
-                        <span class="badge badge-secondary">Postgresql</span>
-                        <span class="badge badge-secondary">Dapper</span>
-                    </div>
-                    <img src="img/coupon.jpg" class="project-image" style="max-width: 100%" />
-                    <p class="project-content">
-                        This is a coupon management system for businesses / organizations, which will 
-                        helps to issue and manage discount coupons for personals, industries, etc,
-                        This project is fully implemented with Blazor Server, C#, AspNetCore,
-                        Postgresql, and Dapper.
-                    </p>
-                    <p class="project-content">
-                        This is my first project with Blazor server. I can say I have
-                        participated almost on all pages and all service modules like
-                        Creating coupons, Coupon approval / rejection and also in the API
-                        including report generation. All kind of reports for a business
-                        to extend the boundary of the coupon and business are available in
-                        this project. This is a fully Blazor server based application.
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-2">
-                    <div class="mb-2 text-center">
-                        <h3 class="font-weight-bold">E-Commerce</h3>
-                        <span class="badge badge-secondary">AspNetCore</span>
-                        <span class="badge badge-secondary">Razor</span>
-                        <span class="badge badge-secondary">C#</span>
-                        <span class="badge badge-secondary">Postgresql</span>
-                        <span class="badge badge-secondary">Dapper</span>
-                    </div>
-                    <p class="project-content">
-                        This is project is designed to sell the goods on the internet. This Projects
-                        designed with ASPNetCore MVC and razor pages. This application has Customizable 
-                        Home page, search page with advanced searching mechanisms, cart and order list 
-                        pages for customers. We have used many advanced concepts from razor, postgresql,
-                        dapper.
-                    </p>
-                    <img src="img/ecom.jpg" class="project-image" style="max-width: 100%" />
-                    <p class="project-content">
-                        This project teach me more about internet and security, bandwidth, caching, hosting
-                        on the internet and much more. Here we have learned about how theming works on 
-                        AspNetCore applications and how we have to design a application to support theming.
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-2">
-                    <div class="mb-2 text-center">
-                        <h3 class="font-weight-bold">NBFC</h3>
-                        <span class="badge badge-secondary">AngularJS</span>
-                        <span class="badge badge-secondary">WCF</span>
-                        <span class="badge badge-secondary">VB</span>
-                        <span class="badge badge-secondary">SQLServer</span>
-                        <span class="badge badge-secondary">Entity Framework</span>
-                    </div>
-                    <img src="img/nbfc.jpg" class="project-image" style="max-width: 100%" />
-                    <p class="project-content">
-                        This is a non-banking financial corporate based loan system that will
-                        help to issue and manage loan applications for personal, mortgage, gold
-                        and also for buying new vehicles. This project is fully implemented with
-                        AngularJS, WCF, Visual Basic, SQLServer, and Entity Framework.
-                    </p>
-                    <p class="project-content">
-                        This is my first project with Angular JS and WCF. I can say I have
-                        participated almost on all pages and all service modules like
-                        initializing loan request approval and also in the EMI collections,
-                        including report generation. Financial reports like balance sheet partner
-                        management and things like that. This is my first project with Angular
-                        JS, WCF, Entity Framework, LINQ, .
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-2">
-                    <div class="mb-2 text-center">
-                        <h3 class="font-weight-bold">CRM</h3>
-                        <span class="badge badge-secondary">AngularJS</span>
-                        <span class="badge badge-secondary">WCF</span>
-                        <span class="badge badge-secondary">VB</span>
-                        <span class="badge badge-secondary">SQLServer</span>
-                        <span class="badge badge-secondary">Entity Framework</span>
-                    </div>
-                    <p class="project-content">
-                        This solution helps to maintain the relationship between a business
-                        provider and their customers by making appointments and followups for
-                        the customers with their representatives and assign tasks to them here.
-                        Also it has inventory modules. This application fully implemented with
-                        AngularJS, WCF, Visual Basic, SQLServer, JQuery.
-                    </p>
-                    <img src="img/crm.jpg" class="project-image" style="max-width: 100%" />
-                    <p class="project-content">
-                        I can say I have participated almost on all modules like followups,
-                        todo, appointments including report generation like representative wise
-                        growth analysis in both frontend and backend. Here i have learned lot
-                        about real customer management from a business point of view.
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-2">
-                    <div class="mb-2 text-center">
-                        <h3 class="font-weight-bold">POS</h3>
-                        <span class="badge badge-secondary">WinForms</span>
-                        <span class="badge badge-secondary">VB</span>
-                        <span class="badge badge-secondary">SQLServer</span>
-                    </div>
-                    <p class="project-content">
-                        This is a winforms application with visual basic and SQLServer. In this
-                        application, I have worked in the sales module and some reports like
-                        stock and fast moving items analysis. This work is to migrate the
-                        existing version of POS software to a new architecture with new ideas
-                        and coding standards.
-                    </p>
-                    <p class="project-content">
-                        In this project alone, I have learned about programing and coding
-                        standards. I attempted but did not complete the implementation with WPF.
-                        But with that attempt i have learned about XML and best way of events
-                        handling. I have learned lot about sql injection, view tables and
-                        complex query writings.
-                    </p>
-                    <img src="img/pos.jfif" class="project-image" style="max-width: 100%" />
-                </div>
-                <div class="col-md-6 col-lg-4 mb-2">
-                    <div class="mb-2 text-center">
-                        <h3 class="font-weight-bold">Fuel Monitor</h3>
-                        <span class="badge badge-secondary">Xamarin.Android</span>
-                        <span class="badge badge-secondary">C#</span>
-                        <span class="badge badge-secondary">SQLite</span>
-                    </div>
-                    <p class="project-content">
-                        This is a simple utility application targeted for android mobiles. 
-                        I have written this application to track my fuel usage of my vehicle 
-                        and my fuel expenses analysis on my vehicle. Yes, also with average 
-                        millage tracking and all. This is my first application with Xamarin.Android
-                        with SQLite backend.
-                    </p>
-                    <img src="img/fuel.jpg" class="project-image" style="max-width: 100%" />
-                    <p class="project-content">
-                        This application gave me a different idea on applications and platforms, 
-                        When trying something like this or utils i feel like i am a programmer.
-                        From this application i have learned about various containers and layouts
-                        available in android, also learned more about XAML. This application gives
-                        different experience.
-                    </p>
-                </div>
-            </div>
+  <div class="fs-5 container text-secondary mt-4" style="background-color: whitesmoke;">
+    <div class="row">
+      <div class="col-12">
+        <div class="row mb-2">
+          <div class="col-12">
+            <p>
+              Hi, I am <strong>Ekalaivan Chidambaram</strong>, Welcome to my official space on the internet,
+            </p>
+          </div>
         </div>
-    </div>
 
-    <!-- Skill Start -->
-    <div class="container-fluid mb-4" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-0" style="-webkit-text-stroke: 2px #0bceaf">
-                    My Skills
-                </h1>
-            </div>
-            <div class="row align-items-top">
-                <div class="col-lg-12">
-                    <p>
-                        In the past experience I have worked on many projects with many technologies, Some of them are,
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="font-weight-bold mb-1">AspNetCore</h3>
-                    <p>
-                        I have been working on implementing Web API / Web Applications with
-                        AspNetCore with numerous versions like 2.1, 3.1, 5.0, and 6.0. In
-                        addition with AspNetCore I am using razor pages, and MVC patterns,
-                        dependency injection, middleware, Themes, cookie authentication,
-                        authorization, view components and tag helpers.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="font-weight-bold mb-1">Net Standard</h3>
-                    <p>
-                        With the help of netstandard, I have written many libraries to support
-                        multiple domains of Dotnet like AspNetcore, Framework, etc., Here also I
-                        have worked on numerous netstandard versions 2.1, 2.0, 1.2, and 1.1.
-                        Before start working on netstandard, I feel uncomfortable working on
-                        multiple Dotnet domains many times.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="font-weight-bold mb-1">Blazor</h3>
-                    <p>
-                        Little bit started to learn and work with Blazor web assembly and Blazor
-                        server, It's an awesome implementation of Microsoft. While experimenting
-                        with Blazor I have experienced how innovations will take importance in
-                        the industry. while having thoughts like this I was embarrassed about
-                        being a software developer.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="font-weight-bold mb-1">Winforms and Console Apps</h3>
-                    <p>
-                        I have written many apps and tools with Winforms and console apps like
-                        database comparer, and Duplicate files Finder. Initially, my career
-                        started with winforms only. I don't have count for the apps that i have
-                        created with winforms and console applications. User controls, Crystal
-                        Reports, dev-express controls, Dev-Express reports and etc.
-                    </p>
-                </div>
-                <div class="col-md-12">
-                    <h3 class="font-weight-bold mb-1">Addon Technologies</h3>
-                    <p>
-                        I have working knowledge on following libraries and technologies, These
-                        Technologies makes my work more easy and clean.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                                <li>.Net Source Generators</li>
-                                <li>.Net Analyzers</li>
-                                <li>Xamarin.Android</li>
-                                <li>WK HTML</li>
-                                <li>NGINX</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                                <li>Postgresql</li>
-                                <li>MS SQL Server</li>
-                                <li>SQLite</li>
-                                <li>Dapper</li>
-                                <li>Entity Framework</li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                                <li>Hangfire</li>
-                                <li>Serilog</li>
-                                <li>Sentry</li>
-                                <li>WSL</li>
-                                <li>NewtonSoft.Json</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <ul>
-                                <li>Bootstrap</li>
-                                <li>Dev-Express Controls and Reports</li>
-                                <li>Javascript</li>
-                                <li>JQuery</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row mb-2" id="aboutme">
+          <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
+              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+              My Self
+            </h1>
+          </div>
+          <div class="col-12">
+            <p>
+              I am a DotNet full stack developer, working a product-based company
+              called
+              <a href="http://locgicsoft.co.in"> Logicsoft Pvt. Ltd.</a>
+              with the title of senior DotNet developer. The company has been in the
+              field of software products for the book trade for more than 30 years.
+              Here we are developing business solutions for the book trade in multiple
+              domains like e-commerce Web apps, Windows forms, Android mobile apps,
+              etc. Here my main development focused on AspNetCore based web
+              application development, and also i am participating in Winforms
+              Development with the help of DotNet and C# programming knowledge. I
+              started my career here on after 2017 with the designation of software
+              engineer. Throughout this entire development journey with logicsoft, my
+              knowledge has stepped up to the next levels, and I have learned how to
+              enjoy coding.
+            </p>
+            <p>
+              In 2015, I began working for Mukils software. In the early stages of my
+              career with Mukils Software, my full implementations focused on Windows Forms
+              based applications with VB.Net. Then I have started to worked with Angular
+              JS-based web applications, WCF and WPF. This is the place where I started
+              to learn new things about programming.
+            </p>
+            <p>
+              In simple words, I am the first graduate from a simple former family. I
+              have completed my Masters graduation in Computer Science at H.H. Rajah's
+              College, Pudukkottai, under Bharathidasan University, Trichy. In my
+              college days, I worked as a trainer for computer applications such as
+              Microsoft Office, Photoshop, Macromedia Flash, and C and C++. My
+              programming ability has grown to the level of trying to write snake
+              games with C and Visual Basic 6.0. In that time, I also tried to learn
+              HTML, CSS, and Javascript to write web applications. In that attempt, I
+              moved to a DotNet based web application development platform ASP.Net and
+              windows forms applications to get result of FLAMES. That's where my
+              career started to build in DotNet.
+            </p>
+          </div>
         </div>
-    </div>
-    <!-- Skill End -->
 
-     <!-- Activities Start -->
-     <div class="container-fluid mb-4" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-0" style="-webkit-text-stroke: 2px #0bceaf">
-                    Activities
-                </h1>
+        <div class="row mb-2" id="quality">
+          <div class="col-lg-5 col-md-6 offset-lg-1">
+            <h3 class="fs-2 fw-bold mb-4 text-dark">My Experience</h3>
+            <div class="border-start border-info pt-2 pl-4 ml-2">
+              <div class="position-relative mb-4">
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <h5 class="fw-bold mb-1 ps-4 text-dark">Senior Dotnet Full Stack Developer</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Logic soft Pvt. Ltd.,</strong> | <small>Since 2020</small>
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <h5 class="fw-bold mb-1 ps-4 text-dark">Dotnet Full Stack Developer</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Logic soft Pvt. Ltd.,</strong> | <small>2017-2020</small>
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <h5 class="fw-bold mb-1 ps-4 text-dark">Software Engineer</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Mukils Software</strong> | <small>2015 - 2017</small>
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <h5 class="fw-bold mb-1 ps-4 text-dark">Dotnet Freelancer</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Self Learning</strong> | <small>2014 - 2015</small>
+                </p>
+                <p></p>
+              </div>
             </div>
-            <div class="row align-items-top">
-                <div class="col-lg-12">
-                    <p>
-                        In my free time, I am trying to give something to the society which I have grown and learned. In
-                        Such activities one is helping today's students who are trying to achieve something in the 
-                        IT industries specifically on Dotnet field or others, Yes I am training students who are interested in
-                        Learning programs / development, this is not only to get job opportunities, This is to enhance
-                        Themselves with learning, thinking, acting, behaving.
-                    </p>
-                    <p>
-                        In this tight time schedule, There is Less time to do such thing, But figuring out to help peoples is interesting. 
-                        I am not trying to be a good teacher, I am trying to be a good guide. This kind of activities are required for
-                        my people Because there are lots of opportunities and a lot of peoples don't know about that. Because of
-                        that many friends of mine are working on different places which is not they have studied. This is happening Because
-                        the world teaching us to earn money not the way for it, the world teaching us to earn marks not the knowledge.
-                    </p>
-                    <p> 
-                        When i was a student, The world only tells me that the companies requires the people who has english communication 
-                        in the finger tips, Who has knowledge in programing like a hacker comes in hollywood movies,
-                        who knows everything about programing, who knows A to Z on computers, who has 80 % - 90 % marks on mark sheets. In 
-                        real world thats not true. The world not encouraged us to try what we wanted / interested thats what i am doing
-                        to my society. There is less amount of people coming out of the box which is the world drawing. In that I am helping
-                        someone to come out from the box.
-                    </p>
-                    <p>
-                        Finally, I have success stories on that. Those are interesting. Will Talk about it later
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Activities End -->
+          </div>
 
-    <!-- Badge Start -->
-    <div class="container-fluid mb-4" id="sociallinks">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-3 text-uppercase text-white mb-0" style="-webkit-text-stroke: 2px #0bceaf">
-                    Social Links
-                </h1>
+          <div class="col-lg-5 col-md-6 text-start">
+            <h3 class="fs-2 fw-bold mb-4 text-dark">My Education</h3>
+            <div class="border-start border-info pt-2 pl-4 ml-2">
+              <div class="position-relative mb-4">
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <h5 class="fw-bold mb-1 ps-4 text-dark">Masters In Computer Science</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Bharathidasan University</strong> | <small>2012 - 2014</small>
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <h5 class="fw-bold mb-1 ps-4 text-dark">Bachelors In Computer Application</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Bharathidasan University</strong> | <small>2009 - 2012</small>
+                </p>
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+              </div>
+              <div class="position-relative mb-4">
+                <h5 class="fw-bold mb-1 ps-4 text-dark">HSC</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Tamilnadu State Board</strong> | <small>2007 - 2009</small>
+                </p>
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+              </div>
+              <div class="position-relative mb-4">
+                <h5 class="fw-bold mb-1 ps-4 text-dark">SSLC</h5>
+                <p class="mb-2 ps-4">
+                  <strong class="font-monospace">Tamilnadu State Board</strong> | <small>2006 - 2007</small>
+                </p>
+                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+              </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <div class="badge mb-4">
-                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
-                            data-type="HORIZONTAL" data-vanity="kalaiekalai" data-version="v1">
-                            <a class="badge-base__link LI-simple-link"
-                                href="https://in.linkedin.com/in/kalaiekalai?trk=profile-badge" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="row mb-0" id="projects">
+          <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
+              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+              Projects
+            </h1>
+          </div>
+
+          <div class="col-12">
+            <p>
+              In the past experience i have worked on many projects with C#.Net, AspNetCore. I would like to tell
+              something
+              about those projects
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="mb-3 text-center">
+              <h3 class="fw-bold">Coupons</h3>
+              <span class="badge bg-secondary">Blazor</span>
+              <span class="badge bg-secondary">Radzen-Blazor</span>
+              <span class="badge bg-secondary">C#</span>
+              <span class="badge bg-secondary">Postgresql</span>
+              <span class="badge bg-secondary">Dapper</span>
+            </div>
+
+            <img src="images/coupon.jpg" class="rounded-3 mb-3" style="max-width: 100%" alt="Coupons" />
+
+            <p class="mb-3">
+              This is a discounts coupon management system for businesses / organizations,
+              which will helps to issue and manage discount coupons for personals, industries, etc,
+              This project is fully implemented with Blazor Server, C#, AspNetCore,
+              Postgresql, and Dapper.
+            </p>
+
+            <p class="mb-3">
+              This is my first project with Blazor server. I can say I have
+              participated almost on all pages and all service modules like
+              Creating coupons, Coupon approval / rejection and also in the API
+              including report generation. All kind of reports for a business
+              to extend the boundary of the coupon and business are available in
+              this project.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="mb-3 text-center">
+              <h3 class="fw-bold">E-Commerce</h3>
+              <span class="badge bg-secondary">AspNetCore</span>
+              <span class="badge bg-secondary">Razor</span>
+              <span class="badge bg-secondary">C#</span>
+              <span class="badge bg-secondary">Postgresql</span>
+              <span class="badge bg-secondary">Dapper</span>
+            </div>
+
+            <p class="mb-3">
+              This is project is designed to sell the goods on the internet. This Projects
+              designed with ASPNetCore MVC and razor pages. This application has Customizable
+              Home page, search page with advanced searching mechanisms, cart and order list
+              pages for customers. We have used many advanced concepts from razor, postgresql,
+              dapper.
+            </p>
+
+            <img src="images/ecom.jpg" class="rounded-3 mb-3" style="max-width: 100%" alt="E-Commerce" />
+
+            <p class="mb-3">
+              This project teach me more about internet and security, bandwidth, caching, hosting
+              on the internet and much more. Here we have learned about how theming works on
+              AspNetCore applications and how we have to design a application to support theming.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="mb-3 text-center">
+              <h3 class="fw-bold">NBFC</h3>
+              <span class="badge bg-secondary">AngularJS</span>
+              <span class="badge bg-secondary">WCF</span>
+              <span class="badge bg-secondary">VB</span>
+              <span class="badge bg-secondary">SQLServer</span>
+              <span class="badge bg-secondary">EF Core</span>
+            </div>
+
+            <img src="images/nbfc.jpg" class="rounded-3 mb-3" style="max-width: 100%" alt="NBFC" />
+
+            <p class="mb-3">
+              This is a non-banking financial corporate based loan system that will
+              help to issue and manage loan applications for personal, mortgage, gold
+              and also for buying new vehicles. This project is fully implemented with
+              AngularJS, WCF, Visual Basic, SQLServer, and Entity Framework.
+            </p>
+
+            <p class="mb-3">
+              This is my first project with Angular JS and WCF. I can say I have
+              participated almost on all pages and all service modules like
+              initializing loan request approval and also in the EMI collections,
+              including report generation. Financial reports like balance sheet partner
+              management and things like that.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="mb-3 text-center">
+              <h3 class="fw-bold">CRM</h3>
+              <span class="badge bg-secondary">AngularJS</span>
+              <span class="badge bg-secondary">WCF</span>
+              <span class="badge bg-secondary">VB</span>
+              <span class="badge bg-secondary">SQLServer</span>
+              <span class="badge bg-secondary">EF Core</span>
+            </div>
+
+            <img src="images/crm.jpg" class="rounded-3 mb-2" style="max-width: 100%" alt="CRM" />
+
+            <p class="mb-3">
+              This solution helps to maintain the relationship between a business
+              provider and their customers by making appointments and followups with
+              their representatives. Also it has inventory modules like purchase, sales,
+              Damage claim, etc,. This application fully implemented
+              with AngularJS, WCF, Visual Basic, SQLServer, JQuery.
+            </p>
+
+            <p class="mb-3">
+              I can say I have participated almost on all modules like followups,
+              todo, appointments including report generation like representative wise
+              growth analysis in both frontend and backend. Here i have learned lot
+              about real customer management from a business point of view.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="mb-3 text-center">
+              <h3 class="fw-bold">POS</h3>
+              <span class="badge bg-secondary">WinForms</span>
+              <span class="badge bg-secondary">VB</span>
+              <span class="badge bg-secondary">SQLServer</span>
+            </div>
+
+            <p class="mb-3">
+              This is a winforms application with visual basic and SQLServer. In this
+              application, I have worked in the sales module and some reports like
+              stock and fast moving items analysis. This work is to migrate the
+              existing version of POS software to a new architecture with new ideas
+              and coding standards. I have also tried to write this in WPF with VB not
+              completed.
+            </p>
+
+            <img src="images/pos.jfif" class="rounded-3 mb-3" style="max-width: 100%" alt="POS" />
+
+            <p class="mb-3">
+              In this project alone, I have learned about programming and coding
+              standards, XML and best way of events handling, lot about sql injections,
+              how can we avoid those things from happening, view tables, complex query writings
+              with joins common table expressions and more.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="mb-3 text-center">
+              <h3 class="fw-bold">Fuel Monitor</h3>
+              <span class="badge bg-secondary">Xamarin.Android</span>
+              <span class="badge bg-secondary">C#</span>
+              <span class="badge bg-secondary">SQLite</span>
+            </div>
+
+            <img src="images/fuel.jpg" class="rounded-3 mb-3" style="max-width: 100%" alt="Fuel Monitor" />
+
+            <p class="mb-3">
+              This is a simple utility application targeted for android mobiles.
+              I have written this application to track my fuel usage of my vehicle
+              and my fuel expenses analysis on my vehicle. Yes, also with average
+              millage tracking and all. This is my first application with Xamarin.Android
+              with SQLite backend.
+            </p>
+
+            <p class="mb-3">
+              This application gave me a different idea on applications and platforms,
+              When trying something like this I feel like I am a programmer.
+              From this application I have learned about various containers and layouts
+              available in android and how id differs from web layouting system , also I have learned more about XAML.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-2" id="skills">
+          <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
+              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+              My Skills
+            </h1>
+          </div>
+
+          <div class="col-12">
+            <p>
+              In the past experience I have worked on many projects with many technologies, Some of them are,
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="fw-bold mb-1">AspNetCore</h3>
+
+            <p>
+              I have been working on implementing Web API / Web Applications with
+              AspNetCore with numerous versions like 2.1, 3.1, 5.0, and 6.0. In
+              addition with AspNetCore I am using razor pages, and MVC patterns,
+              dependency injection, middleware, Themes, cookie authentication,
+              authorization, view components and tag helpers.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="fw-bold mb-1">Net Standard</h3>
+
+            <p>
+              With the help of netstandard, I have written many libraries to support
+              multiple domains of Dotnet like AspNetcore, Framework, etc., Here also I
+              have worked on numerous netstandard versions 2.1, 2.0, 1.2, and 1.1.
+              Before start working on netstandard, I feel uncomfortable working on
+              multiple Dotnet domains many times.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="fw-bold mb-1">Blazor</h3>
+
+            <p>
+              Little bit started to learn and work with Blazor web assembly and Blazor
+              server, It's an awesome implementation of Microsoft. While experimenting
+              with Blazor I have experienced how innovations will take importance in
+              the industry. while having thoughts like this I was embarrassed about
+              being a software developer.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="fw-bold mb-1">Winforms and Console Apps</h3>
+
+            <p>
+              I have written many apps and tools with Winforms and console apps like
+              database comparer, and Duplicate files Finder. Initially, my career
+              started with winforms only. I don't have count for the apps that i have
+              created with winforms and console applications. User controls, Crystal
+              Reports, dev-express controls, Dev-Express reports and etc.
+            </p>
+          </div>
+
+          <div class="col-md-12">
+            <h3 class="fw-bold mb-1">Addon Technologies</h3>
+
+            <p>
+              I have working knowledge on following libraries and technologies, These
+              Technologies makes my work more easy and clean.
+            </p>
+
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <ul>
+                  <li>.Net Source Generators</li>
+                  <li>.Net Analyzers</li>
+                  <li>Xamarin.Android</li>
+                  <li>WK HTML</li>
+                  <li>NGINX</li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <ul>
+                  <li>Postgresql</li>
+                  <li>MS SQL Server</li>
+                  <li>SQLite</li>
+                  <li>Dapper</li>
+                  <li>Entity Framework</li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <ul>
+                  <li>Hangfire</li>
+                  <li>Serilog</li>
+                  <li>Sentry</li>
+                  <li>WSL</li>
+                  <li>NewtonSoft.Json</li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>Dev-Express Controls and Reports</li>
+                  <li>Javascript</li>
+                  <li>JQuery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2" id="activities">
+          <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
+              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+              My Activities
+            </h1>
+          </div>
+
+          <div class="col-12">
+            <p>
+              In my free time, I am trying to give something to the society which I have grown and learned. In
+              Such activities one is helping today's students who are trying to achieve something in the
+              IT industries specifically on Dotnet field or others, Yes I am training students who are interested in
+              Learning programs / development, this is not only to get job opportunities, This is to enhance
+              Themselves with learning, thinking, acting, behaving.
+            </p>
+
+            <p>
+              In this tight time schedule, There is Less time to do such thing, But figuring out to help peoples is
+              interesting.
+              I am not trying to be a good teacher, I am trying to be a good guide. This kind of activities are required
+              for
+              my people Because there are lots of opportunities and a lot of peoples don't know about that. Because of
+              that many friends of mine are working on different places which is not they have studied. This is
+              happening
+              Because
+              the world teaching us to earn money not the way for it, the world teaching us to earn marks not the
+              knowledge.
+            </p>
+
+            <p>
+              When i was a student, The world only tells me that the companies requires the people who has english
+              communication
+              in the finger tips, Who has knowledge in programing like a hacker comes in hollywood movies,
+              who knows everything about programing, who knows A to Z on computers, who has 80 % - 90 % marks on mark
+              sheets. In
+              real world thats not true. The world not encouraged us to try what we wanted / interested thats what i am
+              doing
+              to my society. There is less amount of people coming out of the box which is the world drawing. In that I
+              am
+              helping
+              someone to come out from the box.
+            </p>
+            <p>
+              Finally, I have success stories on that. Those are interesting. Will Talk about it later
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-2" id="contact">
+          <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
+              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+              Social Links
+            </h1>
+          </div>
+
+          <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3 p-2">
+            <a class="text-secondary mx-3"
+              href="https://in.linkedin.com/in/kalaiekalai?trk=public-profile-badge-profile-badge-view-profile-cta"
+              target="_blank" aria-label="Visit my linked in profile">
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+
+            <a class="text-secondary mx-3" href="https://github.com/ekalaivan92" target="_blank"
+              aria-label="Visit my personal github profile">
+              <i class="fab fa-github-square fa-3x"></i>
+            </a>
+
+            <a class="text-secondary mx-3" href="http://blogs.ekalaivan.net/" target="_blank"
+              aria-label="Visit my own writings / blogs">
+              <i class="fas fa-blog fa-2x"></i>
+            </a>
+
+            <a class="text-secondary mx-3" href="https://github.com/kalai-logicsoft" target="_blank"
+              aria-label="Visit my work / official github profile">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+
+            <a class="text-secondary mx-3" href="https://www.instagram.com/callme_kalai/" target="_blank"
+              aria-label="Visit my instagram profile">
+              <i class="fab fa-instagram fa-3x"></i>
+            </a>
+
+            <a class="text-secondary mx-3" href="http://clicks.ekalaivan.net/" target="_blank"
+              aria-label="Visit my clicks and photography site">
+              <i class="far fa-image fa-3x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Badge End -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark bg-white px-0 back-to-top">
-        <i class="fa fa-angle-double-up"></i>
-    </a>
-    <!-- Scroll to Bottom -->
-    <a href="#" class="scroll-to-bottom">
-        <i class="fa fa-2x fa-angle-down text-white"></i>
-    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" type="application/javascript"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+    async></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" type="application/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" type="text/javascript" async></script>
+
+  <script type="application/Javascript">
+
+      const home = document.getElementById('home');
+      const headerHeight = home.clientHeight;
+
+      function handleWindowScroll() {
+        if (window.scrollY > headerHeight - 62) {
+          $("#mainNav").removeClass("bg-transparent");
+          $("#mainNav").addClass("bg-navbar")
+        }
+        else {
+          $("#mainNav").removeClass("bg-navbar")
+          $("#mainNav").addClass("bg-transparent");
+        }
+      };
+
+      function navLinkClickHandler(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top - 62
+                }, 1000);
+                
+                if ($(this).parents('.navbar-nav').length) {
+                    $('.navbar-nav .active').removeClass('active');
+                    $(this).closest('a').addClass('active');
+                }
+
+                handleWindowScroll();
+                if(!$(".navbar-toggler").hasClass('collapsed'))
+                {
+                  $(".navbar-toggler").click();
+                }
+            }
+        }
+
+      function activate() {
+        handleWindowScroll();
+
+        $(window).scroll(handleWindowScroll);
+        $(".nav-link").on('click', navLinkClickHandler);
+      };
+
+      activate();
+    </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 </html>
