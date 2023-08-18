@@ -42,13 +42,24 @@
       background-color: #117d70cf;
     }
 
+    .section-header
+    {
+      -webkit-text-stroke: 2.2px var(--bs-info)
+    }
+
+    .tracker-icon-left
+    {
+      top: 2px; 
+      left: -10px
+    }
+
     ::-webkit-scrollbar {
       width: 8px;
       height: 8px;
     }
 
     ::-webkit-scrollbar-track {
-      background: var(--bs-gray);
+      background: #f3f3f3;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -121,7 +132,7 @@
         <div class="row align-items-center justify-content-center" style="height: calc(100Vh);">
           <div class="col-8 text-center text-white">
             <div class="fw-bold text-white" style="text-shadow: 0px 3px 7px var(--bs-primary);">
-              <p class="mb-0 fs-4 text-center">
+              <p class="mb-0 fs-4 text-center font-monospace">
                 <em>
                   "Be Water, My Friend. Empty your mind. Be formless, shapeless, like
                   water. You put water into a cup, it becomes the cup. You put water
@@ -151,8 +162,7 @@
 
         <div class="row mb-2" id="aboutme">
           <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
-            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
-              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0 section-header">
               My Self
             </h1>
           </div>
@@ -201,28 +211,28 @@
             <h3 class="fs-2 fw-bold mb-4 text-dark">My Experience</h3>
             <div class="border-start border-info pt-2 pl-4 ml-2">
               <div class="position-relative mb-4">
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
                 <h5 class="fw-bold mb-1 ps-4 text-dark">Senior Dotnet Full Stack Developer</h5>
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Logic soft Pvt. Ltd.,</strong> | <small>Since 2020</small>
                 </p>
               </div>
               <div class="position-relative mb-4">
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
                 <h5 class="fw-bold mb-1 ps-4 text-dark">Dotnet Full Stack Developer</h5>
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Logic soft Pvt. Ltd.,</strong> | <small>2017-2020</small>
                 </p>
               </div>
               <div class="position-relative mb-4">
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
                 <h5 class="fw-bold mb-1 ps-4 text-dark">Software Engineer</h5>
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Mukils Software</strong> | <small>2015 - 2017</small>
                 </p>
               </div>
               <div class="position-relative mb-4">
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
                 <h5 class="fw-bold mb-1 ps-4 text-dark">Dotnet Freelancer</h5>
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Self Learning</strong> | <small>2014 - 2015</small>
@@ -236,7 +246,7 @@
             <h3 class="fs-2 fw-bold mb-4 text-dark">My Education</h3>
             <div class="border-start border-info pt-2 pl-4 ml-2">
               <div class="position-relative mb-4">
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
                 <h5 class="fw-bold mb-1 ps-4 text-dark">Masters In Computer Science</h5>
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Bharathidasan University</strong> | <small>2012 - 2014</small>
@@ -247,21 +257,21 @@
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Bharathidasan University</strong> | <small>2009 - 2012</small>
                 </p>
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
               </div>
               <div class="position-relative mb-4">
                 <h5 class="fw-bold mb-1 ps-4 text-dark">HSC</h5>
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Tamilnadu State Board</strong> | <small>2007 - 2009</small>
                 </p>
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
               </div>
               <div class="position-relative mb-4">
                 <h5 class="fw-bold mb-1 ps-4 text-dark">SSLC</h5>
                 <p class="mb-2 ps-4">
                   <strong class="font-monospace">Tamilnadu State Board</strong> | <small>2006 - 2007</small>
                 </p>
-                <i class="far fa-dot-circle text-info position-absolute" style="top: 2px; left: -10px"></i>
+                <i class="far fa-dot-circle text-info position-absolute tracker-icon-left"></i>
               </div>
             </div>
           </div>
@@ -269,8 +279,7 @@
 
         <div class="row mb-0" id="projects">
           <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
-            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
-              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0 section-header">
               Projects
             </h1>
           </div>
@@ -451,8 +460,7 @@
 
         <div class="row mb-2" id="skills">
           <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
-            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
-              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0 section-header">
               My Skills
             </h1>
           </div>
@@ -564,8 +572,7 @@
 
         <div class="row mb-2" id="activities">
           <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
-            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
-              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0 section-header">
               My Activities
             </h1>
           </div>
@@ -611,10 +618,9 @@
           </div>
         </div>
 
-        <div class="row mb-2 justify-content-center" id="contact">
+        <div class="row mb-4 justify-content-center" id="contact">
           <div class="col-12 position-relative d-flex align-items-center justify-content-center mb-3">
-            <h1 class="fw-bold display-3 text-uppercase text-white mb-0"
-              style="-webkit-text-stroke: 2.2px var(--bs-info)">
+            <h1 class="fw-bold display-3 text-uppercase text-white mb-0 section-header">
               Social Links
             </h1>
           </div>
@@ -665,6 +671,7 @@
       </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" type="application/javascript"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
     async></script>
@@ -674,50 +681,58 @@
 
   <script type="application/Javascript">
 
-      const home = document.getElementById('home');
-      const headerHeight = home.clientHeight;
+    const home = document.getElementById('home');
+    const headerHeight = home.clientHeight;
 
-      function handleWindowScroll() {
-        if (window.scrollY > headerHeight - 62) {
-          $("#mainNav").removeClass("bg-transparent");
-          $("#mainNav").addClass("bg-navbar")
-        }
-        else {
-          $("#mainNav").removeClass("bg-navbar")
-          $("#mainNav").addClass("bg-transparent");
-        }
-      };
+    function handleWindowScroll() {
+      if (window.scrollY > headerHeight - 62) {
+        $("#mainNav").removeClass("bg-transparent");
+        $("#mainNav").addClass("bg-navbar")
+      }
+      else {
+        $("#mainNav").removeClass("bg-navbar")
+        $("#mainNav").addClass("bg-transparent");
+      }
+    };
 
-      function navLinkClickHandler(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                
-                $('html, body').animate({
-                    scrollTop: $(this.hash).offset().top - 62
-                }, 1000);
-                
-                if ($(this).parents('.navbar-nav').length) {
-                    $('.navbar-nav .active').removeClass('active');
-                    $(this).closest('a').addClass('active');
-                }
+    function navLinkClickHandler(event) {
+          if (this.hash !== "") {
+              event.preventDefault();
+              
+              $('html, body').animate({
+                  scrollTop: $(this.hash).offset().top - 62
+              }, 1000);
+              
+              if ($(this).parents('.navbar-nav').length) {
+                  $('.navbar-nav .active').removeClass('active');
+                  $(this).closest('a').addClass('active');
+              }
 
-                handleWindowScroll();
-                if(!$(".navbar-toggler").hasClass('collapsed'))
-                {
-                  $(".navbar-toggler").click();
-                }
-            }
-        }
+              handleWindowScroll();
+              if(!$(".navbar-toggler").hasClass('collapsed'))
+              {
+                $(".navbar-toggler").click();
+              }
+          }
+      }
 
-      function activate() {
-        handleWindowScroll();
+    function activate() {
+      handleWindowScroll();
 
-        $(window).scroll(handleWindowScroll);
-        $(".nav-link").on('click', navLinkClickHandler);
-      };
+      $(window).scroll(handleWindowScroll);
+      $(".nav-link").on('click', navLinkClickHandler);
+    };
 
-      activate();
-    </script>
+    activate();
+  </script>
 </body>
+
+<footer class="bg-dark py-3">
+  <h5 class="p-0 m-0 text-center text-white">
+    This website is belong to <a href="https://in.linkedin.com/in/kalaiekalai?trk=public-profile-badge-profile-badge-view-profile-cta">Ekalaivan Chidambaram</a>. 
+    <br />
+    Be aware of copyrights.
+  </h5>
+</footer>
 
 </html>
